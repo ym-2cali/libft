@@ -6,7 +6,7 @@
 #    By: yael-maa <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/24 01:53:50 by yael-maa          #+#    #+#              #
-#    Updated: 2024/11/08 15:52:58 by yael-maa         ###   ########.fr        #
+#    Updated: 2024/11/08 20:44:51 by yael-maa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ CBONUS = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c ft_lstlast
 
 OFILES = $(CFILES:.c=.o)
 
-OBONUS = $(CBONUS: .c=.o)
+OBONUS = $(CBONUS:.c=.o)
 
 CC = cc
 
@@ -27,7 +27,7 @@ NAME = libft.a
 
 all: $(NAME)
 
-bonus:$(OBONUS)
+bonus: $(OBONUS)
 	@ar rc $(NAME) $(OBONUS)
 
 $(NAME):$(OFILES)
