@@ -1,27 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yael-maa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/26 00:15:35 by yael-maa          #+#    #+#             */
-/*   Updated: 2024/10/26 00:52:55 by yael-maa         ###   ########.fr       */
+/*   Created: 2024/10/30 05:25:48 by yael-maa          #+#    #+#             */
+/*   Updated: 2024/11/04 12:11:03 by yael-maa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <string.h>
 
-void	ft_bzero(void *s, size_t n)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-	unsigned char	*S;
+	char	*s2;
+	size_t	start;
 	size_t	i;
+	size_t	end;
 
-	S = (unsigned char *)s;
+	if (!s1 || !set)
+		return (NULL);
+	start = 0;
+	end = ft_strlen(s1);
+	while (start < end && ft_strchr(set, s1[start]))
+		start++;
+	while (end > start && ft_strchr(set, s1[end - 1]))
+		end--;
+	s2 = (char *)malloc(end - start + 1);
+	if (!s2)
+		return (NULL);
 	i = 0;
-	while (i < n)
+	while (i < end - start)
 	{
-		S[i] = '0';
+		s2[i] = s1[start + i];
 		i++;
 	}
+	s2[i] = '\0';
+	return (s2);
 }
