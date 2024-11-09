@@ -14,7 +14,7 @@
 
 int	ft_atoi(const char *str)
 {
-	unsigned long	number;
+	long			number;
 	int				sign;
 
 	sign = 1;
@@ -31,19 +31,20 @@ int	ft_atoi(const char *str)
 	{
 		number *= 10;
 		number += *str - 48;
-		if (number < 9223372036854775807 && sign == 1)
+		if (number < 0 && sign == 1)
 			return (-1);
-		if (number < 9223372036854775807 && sign == -1)
+		else if (number < 0 && sign == -1)
 			return (0);
 		str++;
 	}
 	return (number * sign);
 }
+
 #include <stdio.h>
 #include <stdlib.h>
 int main()
 {
-	const char str[] = "9223372036854775806";
+	const char str[] = "2147483648";
 	printf("%d\n", ft_atoi(str));
 	printf("%d\n", atoi(str));
 }

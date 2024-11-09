@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int	ft_ilen(int n)
+static int	ft_ilen(int n)
 {
 	long long int	c;
 	int				size;

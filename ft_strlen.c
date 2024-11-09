@@ -14,7 +14,6 @@
 
 size_t	ft_strlen(const char *s)
 {
-	//to check
 	size_t	i;
 
 	i = 0;
@@ -22,3 +21,4 @@ size_t	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
+
