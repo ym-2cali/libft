@@ -14,7 +14,6 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	//to check
 	while (*s)
 	{
 		if (*s == (char)c)
@@ -25,3 +24,4 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s);
 	return (NULL);
 }
+

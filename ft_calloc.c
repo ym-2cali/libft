@@ -18,7 +18,7 @@ void	*ft_calloc(size_t count, size_t size)
 	size_t	check;
 
 	check = count * size;
-	if ((int)count < 0 && (int)size < 0)
+	if (count && size != check / count)
 		return (NULL);
 	if (size == 0)
 	{
@@ -28,6 +28,13 @@ void	*ft_calloc(size_t count, size_t size)
 	s = malloc(check);
 	if (!s)
 		return (NULL);
-	ft_bzero(s, size);
+	ft_bzero(s, check);
 	return (s);
 }
+
+
+// int main()
+// {
+// 	printf("%p\n", ft_calloc(9223372036854775807, -9223372036854775808));
+// 	// printf("%p\n", calloc(9223372036854775807, -9223372036854775808));
+// }

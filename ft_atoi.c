@@ -14,11 +14,11 @@
 
 int	ft_atoi(const char *str)
 {
-	long			number;
-	int				sign;
+	int		sign;
+	int 	number;
 
 	sign = 1;
-	number = 0;
+	number =0;
 	while (*str == 32 || (*str >= 9 && *str <= 13))
 		str++;
 	if (*str == '-' || *str == '+')
@@ -39,12 +39,11 @@ int	ft_atoi(const char *str)
 	}
 	return (number * sign);
 }
-
-#include <stdio.h>
-#include <stdlib.h>
-int main()
+#include <string.h>
+int	main()
 {
-	const char str[] = "2147483648";
-	printf("%d\n", ft_atoi(str));
-	printf("%d\n", atoi(str));
+	printf("%d\n", ft_atoi(strdup("1844674407370955161566")));
+	printf("%d\n", atoi(strdup("1844674407370955161566")));
 }
+
+

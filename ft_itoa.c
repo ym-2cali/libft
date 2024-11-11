@@ -20,7 +20,7 @@ static int	ft_ilen(int n)
 	c = n;
 	size = 0;
 	if (c == 0)
-		return (2);
+		return (1);
 	if (c < 0)
 		size = 1;
 	while (c)
@@ -33,9 +33,9 @@ static int	ft_ilen(int n)
 
 char	*ft_itoa(int n)
 {
-	long long int	m;
-	char			*s;
-	int				len;
+	long long	m;
+	char		*s;
+	int			len;
 
 	m = n;
 	len = ft_ilen(m);

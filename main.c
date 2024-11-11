@@ -26,7 +26,7 @@
 	return (terma);
 }
 */
-int	main()
+/*int	main()
 {
 	/*
 	t_list *head;

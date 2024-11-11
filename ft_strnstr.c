@@ -14,11 +14,11 @@
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	//to check
 	size_t	i;
 	size_t	j;
 	size_t	k;
-
+	if (!haystack && !len)
+		return (NULL);
 	if (needle[0] == '\0')
 		return ((char *)haystack);
 	i = 0;
@@ -40,3 +40,4 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
+

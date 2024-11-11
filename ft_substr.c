@@ -22,18 +22,24 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	if (!s)
 		return (NULL);
-	slen = ft_strlen(s);
+	slen = ft_strlen(s); // 6
 	if (start >= slen)
+	{
 		size = 0;
+	}
 	else if (slen - start < len)
+	{
 		size = slen - start;
+	}
 	else
+	{
 		size = len;
+	}
 	d = (char *)malloc(sizeof(char) * (size + 1));
 	if (!d)
 		return (NULL);
 	i = 0;
-	while (i < len)
+	while (i < size)
 	{
 		d[i] = s[start + i];
 		i++;
@@ -41,3 +47,17 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	d[i] = '\0';
 	return (d);
 }
+
+
+// int main(int argc, char const *argv[])
+// {
+// 	char *s = ft_substr("abc123", 1, 7000);
+
+// 	char d[] = "123";
+
+// 	d[1] = 'A';
+
+// 	puts(d);
+// 	// printf("%s\n", s);
+// 	return 0;
+// }

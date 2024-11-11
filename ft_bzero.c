@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <libc.h>
 
 void	ft_bzero(void *s, size_t n)
 {
@@ -25,3 +26,10 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
+
+// int main() {
+// 	char *s = strdup("0123456789");
+// 	ft_bzero((int *)s + 1, 1);
+// 	printf("%s", (char *)s + 5);
+// 	return 0;
+// }

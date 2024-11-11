@@ -14,7 +14,6 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	//to check
 	size_t	ls;
 
 	ls = ft_strlen(s);

@@ -20,10 +20,12 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 
 	x1 = s1;
 	x2 = s2;
+
 	if (n == 0)
 		return (0);
 	i = 0;
-	while (x1[i] && x2[i] && x1[i] == x2[i] && i < n - 1)
+	while (i < n - 1 && x1[i] == x2[i])
 		i++;
 	return (x1[i] - x2[i]);
 }
+
