@@ -6,7 +6,7 @@
 /*   By: yael-maa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 23:29:48 by yael-maa          #+#    #+#             */
-/*   Updated: 2024/10/27 00:18:06 by yael-maa         ###   ########.fr       */
+/*   Updated: 2024/11/12 02:20:45 by yael-maa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	//to check
 	size_t	i;
 
 	if (dstsize > 0)
@@ -29,5 +28,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	}
 	return (ft_strlen(src));
 }
-
-

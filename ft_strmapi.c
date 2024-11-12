@@ -6,7 +6,7 @@
 /*   By: yael-maa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 04:33:49 by yael-maa          #+#    #+#             */
-/*   Updated: 2024/11/04 12:06:49 by yael-maa         ###   ########.fr       */
+/*   Updated: 2024/11/12 02:21:48 by yael-maa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	//to check
 	unsigned int	i;
 	char			*str;
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yael-maa <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: yael-maa <yael-maa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 00:15:35 by yael-maa          #+#    #+#             */
-/*   Updated: 2024/11/04 11:46:39 by yael-maa         ###   ########.fr       */
+/*   Updated: 2024/11/12 05:12:06 by yael-maa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,3 @@ void	ft_bzero(void *s, size_t n)
 	}
 }
 
-// int main() {
-// 	char *s = strdup("0123456789");
-// 	ft_bzero((int *)s + 1, 1);
-// 	printf("%s", (char *)s + 5);
-// 	return 0;
-// }

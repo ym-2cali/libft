@@ -14,6 +14,6 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
-	//to check fd prot
-	write(fd, &c, 1);
+	if (fd >= 0)
+		write(fd, &c, 1);
 }

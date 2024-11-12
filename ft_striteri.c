@@ -6,7 +6,7 @@
 /*   By: yael-maa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 12:25:25 by yael-maa          #+#    #+#             */
-/*   Updated: 2024/11/04 12:33:26 by yael-maa         ###   ########.fr       */
+/*   Updated: 2024/11/12 02:19:13 by yael-maa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	//to check
 	unsigned int	i;
 
 	if (!s || !f)

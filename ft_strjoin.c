@@ -6,7 +6,7 @@
 /*   By: yael-maa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 04:53:23 by yael-maa          #+#    #+#             */
-/*   Updated: 2024/10/30 05:23:25 by yael-maa         ###   ########.fr       */
+/*   Updated: 2024/11/12 02:19:52 by yael-maa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	if (!s1 || !s2)
 		return (NULL);
 	len = ft_strlen(s1) + ft_strlen(s2);
-	s3 = (char *)malloc(sizeof(char) * (len + 1)); // ("", "")
+	s3 = (char *)malloc(sizeof(char) * (len + 1));
 	if (!s3)
 		return (NULL);
 	i = 0;
@@ -40,4 +40,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	s3[k + i] = '\0';
 	return (s3);
 }
-

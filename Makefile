@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: yael-maa <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: yael-maa <yael-maa@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/24 01:53:50 by yael-maa          #+#    #+#              #
-#    Updated: 2024/11/08 20:30:50 by yael-maa         ###   ########.fr        #
+#    Updated: 2024/11/12 04:03:17 by yael-maa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,11 +32,11 @@ bonus: $(OBONUS)
 $(NAME):$(OFILES)
 	@ar rc $(NAME) $(OFILES)
 	
-clean:
-	@rm -f $(OFILES) $(OBONUS)
 
 %.o: %.c libft.h
-	@$(CC) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
+clean:
+	@rm -f $(OFILES) $(OBONUS)
 
 fclean: clean
 	@rm -f $(NAME)

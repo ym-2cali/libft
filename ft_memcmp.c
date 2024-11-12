@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: yael-maa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/28 22:00:13 by yael-maa          #+#    #+#             */
-/*   Updated: 2024/11/04 11:55:30 by yael-maa         ###   ########.fr       */
+/*   Created: 2024/11/12 02:27:21 by yael-maa          #+#    #+#             */
+/*   Updated: 2024/11/12 02:27:23 by yael-maa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 
 	x1 = s1;
 	x2 = s2;
-
 	if (n == 0)
 		return (0);
 	i = 0;
@@ -28,4 +27,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 		i++;
 	return (x1[i] - x2[i]);
 }
-

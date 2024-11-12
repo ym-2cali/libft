@@ -6,7 +6,7 @@
 /*   By: yael-maa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 18:57:28 by yael-maa          #+#    #+#             */
-/*   Updated: 2024/11/04 12:08:00 by yael-maa         ###   ########.fr       */
+/*   Updated: 2024/11/12 02:22:26 by yael-maa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,4 +23,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		i++;
 	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
-

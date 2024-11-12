@@ -6,7 +6,7 @@
 /*   By: yael-maa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 15:29:03 by yael-maa          #+#    #+#             */
-/*   Updated: 2024/11/04 11:47:44 by yael-maa         ###   ########.fr       */
+/*   Updated: 2024/11/12 02:07:40 by yael-maa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ void	*ft_calloc(size_t count, size_t size)
 	if (size == 0)
 	{
 		s = malloc(0);
+		if (!s)
+			return (NULL);
 		return (s);
 	}
 	s = malloc(check);
@@ -31,10 +33,3 @@ void	*ft_calloc(size_t count, size_t size)
 	ft_bzero(s, check);
 	return (s);
 }
-
-
-// int main()
-// {
-// 	printf("%p\n", ft_calloc(9223372036854775807, -9223372036854775808));
-// 	// printf("%p\n", calloc(9223372036854775807, -9223372036854775808));
-// }
