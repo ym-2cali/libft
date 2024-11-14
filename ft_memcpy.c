@@ -6,7 +6,7 @@
 /*   By: yael-maa <yael-maa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 04:51:07 by yael-maa          #+#    #+#             */
-/*   Updated: 2024/11/13 01:27:05 by yael-maa         ###   ########.fr       */
+/*   Updated: 2024/11/14 00:56:11 by yael-maa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	size_t			i;
 
 	if (dst == src)
-		return(dst);
+		return (dst);
 	d = (unsigned char *)dst;
 	s = (unsigned char *)src;
 	i = 0;
