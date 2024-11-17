@@ -20,9 +20,9 @@ bonus: $(OBONUS)
 $(NAME):$(OFILES)
 	@ar rc $(NAME) $(OFILES)
 	
-
 %.o: %.c  libft.h
 	$(CC) $(CFLAGS) -c $< -o $@
+
 clean:
 	@rm -f $(OFILES) $(OBONUS)
 
